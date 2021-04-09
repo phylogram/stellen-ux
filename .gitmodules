@@ -1,0 +1,3 @@
+[submodule "git-dependencies/fundament"]
+	path = git-dependencies/fundament
+	url = https://github.com/acdh-oeaw/fundament.git
