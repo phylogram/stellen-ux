@@ -2,7 +2,7 @@
   <b-container>
     <h1 class="title mt-5">oeaw-app</h1>
     <div class="mt-3">
-      Have fun surfing around. Find the code and a sorting algorithm at
+      Have fun surfing around. Find the code at
       <a href="https://github.com/phylogram/stellen-ux" target="_blank"
         >github</a
       >
