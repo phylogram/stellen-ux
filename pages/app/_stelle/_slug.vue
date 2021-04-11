@@ -57,7 +57,7 @@ export default {
   },
   mounted() {
     this.$axios
-      .get('https://mmp.acdh-dev.oeaw.ac.at/api/stelle/' + this.id)
+      .get('https://mmp.acdh-dev.oeaw.ac.at/api/stelle/?id=' + this.id)
       .then((response) => {
         this.itemData = response.data.results.pop()
         this.loading = false
