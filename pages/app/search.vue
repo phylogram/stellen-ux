@@ -126,6 +126,8 @@ export default {
         { key: 'zitat', formatter: this.shorten },
         { key: 'translation', formatter: this.shorten },
         { key: 'kommentar', formatter: this.shorten },
+        { key: 'text.start_date', label: 'from' },
+        { key: 'text.end_date', label: 'to' },
       ],
     }
   },
