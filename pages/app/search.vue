@@ -113,7 +113,7 @@ export default {
       searchID: '',
       currentPage: 1,
       rows: undefined,
-      perPage: 10,
+      perPage: 20,
       isBusy: false,
       searchsummary: '',
       searchzitat: '',
