@@ -99,6 +99,18 @@
           >Show "Stelle" {{ getId(data.item) }}</nuxt-link
         >
       </template>
+      <template #cell(key_word)="data">
+        <b-btn-group size="sm">
+          <b-button
+            v-for="(value, key) in data.item.key_word"
+            :key="key"
+            :href="value.url"
+            target="_blank"
+            class="m-2"
+          >{{ value.stichwort }}</b-button
+          >
+        </b-btn-group>
+      </template>
     </b-table>
   </div>
 </template>
@@ -128,6 +140,7 @@ export default {
         { key: 'kommentar', formatter: this.shorten },
         { key: 'text.start_date', label: 'from' },
         { key: 'text.end_date', label: 'to' },
+        { key: 'key_word', label: 'Keywords' },
       ],
     }
   },
@@ -191,6 +204,7 @@ export default {
       }
       return result
     },
+
   },
 }
 </script>
