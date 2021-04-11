@@ -4,6 +4,8 @@
       <b-spinner label="Loading..."></b-spinner>
     </div>
     <div id="stellen-single-view-loaded">
+      <h1>Detail "Stelle" Page</h1>
+      <b-button @click="$router.back()" class="m-2">Back</b-button>
       <b-list-group>
         <b-list-group-item v-for="(value, key) in itemData" :key="key">
           <div class="accordion" role="tablist">
